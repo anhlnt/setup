@@ -214,9 +214,6 @@ if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 
-#GitHubの設定
-function git(){hub "$@"}
-
 #brunchの監視ビルド、ポート指定
 alias bwsp='brunch watch --server --port'
 alias bws='brunch watch --server'
