@@ -41,10 +41,10 @@ sudo make
 ./mnistCUDNN
 ```
 
-## Install git, cmake, curl
+## Install git, cmake, curl, vim
 ```bash
 sudo apt -y update
-sudo apt -y install git cmake cmake-curses-gui cmake-gui curl
+sudo apt -y install git cmake cmake-curses-gui cmake-gui curl vim
 ```
 
 ## Install python
