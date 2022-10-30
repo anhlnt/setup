@@ -6,13 +6,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-## Install Nvidia driver
-```bash
-sudo apt install nvidia-driver-510
-sudo reboot
-```
-
-## Install CUDA
+## Install CUDA and Nvidia driver
 https://developer.nvidia.com/cuda-downloads 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
