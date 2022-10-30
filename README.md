@@ -1,6 +1,6 @@
 # Ubuntu 22.04
 
-## Intro
+## Preparation
 ```bash
 sudo apt update
 sudo apt upgrade
