@@ -18,6 +18,41 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
+## Install cuDNN
+[Log in](https://developer.nvidia.com/cudnn) and download cuDNN packages.
+
+Example
+```bash
+sudo apt-get install libcudnn8-samples=8.6.0.163-1+cuda11.8 
+sudo cp /var/cudnn-local-repo-ubuntu2204-8.6.0.163/cudnn-local-FAED14DD-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get install libcudnn8=8.6.0.163-1+cuda11.8 
+sudo apt-get install libcudnn8-dev=8.6.0.163-1+cuda11.8 
+sudo apt-get install libcudnn8-samples=8.6.0.163-1+cuda11.8 
+```
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+
+Test
+
+```bash
+sudo apt-get -y install libfreeimage3 libfreeimage-dev
+cd /usr/src/cudnn_samples_v8/mnistCUDNN
+sudo make
+./mnistCUDNN
+```
+
+## Install git, cmake, curl
+```bash
+sudo apt -y update
+sudo apt -y install git cmake cmake-curses-gui cmake-gui curl
+```
+
+## Install python
+```bash
+sudo apt -y update
+sudo apt -y install python-is-python3 python3-dev python-dev-is-python3 python3-pip python3-setuptools python3-venv build-essential
+```
+
 ## Install Chrome
 ```bash
 cd ~/Downloads/
