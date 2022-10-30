@@ -55,6 +55,11 @@ sudo apt -y install python-is-python3 python3-dev python-dev-is-python3 python3-
 
 ## Install pyenv, pyenv-virtualenv
 ```bash
+sudo apt update
+sudo apt -y install --no-install-recommends make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
 curl https://pyenv.run | bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
