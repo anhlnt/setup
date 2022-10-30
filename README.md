@@ -63,14 +63,15 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 curl https://pyenv.run | bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init --path)"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
 ## Install python via pyenv
 ```bash
 pyenv install 3.9.15
+pyenv global 3.9.15
 ```
 
 ## Install Chrome
