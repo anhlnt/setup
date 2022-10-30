@@ -74,6 +74,12 @@ pyenv install 3.9.15
 pyenv global 3.9.15
 ```
 
+## Install tensorflow, pytorch
+```bash
+pip install tensorflow
+pip install torch torchvision torchaudio
+```
+
 ## Install Chrome
 ```bash
 cd ~/Downloads/
