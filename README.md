@@ -53,6 +53,17 @@ sudo apt -y update
 sudo apt -y install python-is-python3 python3-dev python-dev-is-python3 python3-pip python3-setuptools python3-venv build-essential
 ```
 
+## Install pyenv, pyenv-virtualenv
+```bash
+curl https://pyenv.run | bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+
 ## Install Chrome
 ```bash
 cd ~/Downloads/
