@@ -64,7 +64,7 @@ curl https://pyenv.run | bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init --path)"' >> ~/.zshrc
+eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -79,6 +79,13 @@ pyenv global 3.9.15
 pip install tensorflow
 pip install torch torchvision torchaudio
 ```
+
+## Setting SSH
+```bash
+sudo apt -y update
+sudo apt -y install openssh-server
+```
+https://www.kkaneko.jp/tools/server/pubkey.html
 
 ## Install Chrome
 ```bash
