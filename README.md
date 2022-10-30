@@ -1,5 +1,11 @@
 # Ubuntu 22.04
 
+## Intro
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
 ## Install Nvidia driver
 ```bash
 sudo apt install nvidia-driver-510
