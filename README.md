@@ -68,6 +68,10 @@ eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
+## Install python via pyenv
+```bash
+pyenv install 3.9.15
+```
 
 ## Install Chrome
 ```bash
