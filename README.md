@@ -119,3 +119,18 @@ cd ~/Downloads/
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
+
+## Uninstall 
+### CUDA uninstall
+```bash
+sudo apt-get --purge remove nvidia*
+sudo apt-get --purge remove cuda*
+sudo apt-get --purge remove cudnn*
+sudo apt-get --purge remove libnvidia*
+sudo apt-get --purge remove libcuda*
+sudo apt-get --purge remove libcudnn*
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get update
+sudo rm -rf /usr/local/cuda*
+```
