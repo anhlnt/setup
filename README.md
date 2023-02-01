@@ -7,7 +7,9 @@ sudo apt upgrade
 ```
 
 ## Install CUDA and Nvidia driver
-https://developer.nvidia.com/cuda-downloads 
+https://developer.nvidia.com/cuda-toolkit-archive
+
+CUDA version: 11.7.1
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
 sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
